@@ -15,10 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('news/add','NewsController@newsAdd');
+Route::get('register','Admin@register');
 
-Route::post('news/update','NewsController@newsUpdate');
+Route::get('login','Admin@login');
 
-Route::get('news/del','NewsController@newsDel');
+Route::get('userinfo','Admin@userInfo');
 
-Route::get('news/get','NewsController@newsGet');
+Route::get('repass','Admin@repass');
+
+Route::post('register/do','Admin@registerDo');
+
+Route::post('login/do','Admin@loginDo');
+
+Route::post('userinfo/change','Admin@userInfoChange');
+
+Route::post('repass/do','Admin@repassDo');
