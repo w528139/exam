@@ -30,3 +30,5 @@ Route::post('login/do','Admin@loginDo');
 Route::post('userinfo/change','Admin@userInfoChange');
 
 Route::post('repass/do','Admin@repassDo');
+
+Route::post('repass/do','Admin@repassDo');
