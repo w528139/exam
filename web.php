@@ -25,8 +25,6 @@ Route::get('repass','Admin@repass');
 
 Route::post('register/do','Admin@registerDo');
 
-Route::post('login/do','Admin@loginDo');
-
 Route::post('userinfo/change','Admin@userInfoChange');
 
 Route::post('repass/do','Admin@repassDo');
